@@ -1,0 +1,3192 @@
+random: Trying to read entropy from /dev/random
+Configuration file: hostapd.conf
+ctrl_interface_group=0
+rfkill: initial event: idx=0 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=1 type=1 op=0 soft=0 hard=0
+nl80211: TDLS supported
+nl80211: TDLS external setup
+nl80211: Supported cipher 00-0f-ac:1
+nl80211: Supported cipher 00-0f-ac:5
+nl80211: Supported cipher 00-0f-ac:2
+nl80211: Supported cipher 00-0f-ac:4
+nl80211: Supported cipher 00-0f-ac:10
+nl80211: Supported cipher 00-0f-ac:8
+nl80211: Supported cipher 00-0f-ac:9
+nl80211: Supported cipher 00-0f-ac:6
+nl80211: Supported cipher 00-0f-ac:13
+nl80211: Supported cipher 00-0f-ac:11
+nl80211: Supported cipher 00-0f-ac:12
+nl80211: Using driver-based off-channel TX
+nl80211: Use separate P2P group interface (driver advertised support)
+nl80211: interface wlp2s0 in phy phy0
+nl80211: Set mode ifindex 3 iftype 3 (AP)
+nl80211: Setup AP(wlp2s0) - device_ap_sme=0 use_monitor=0
+nl80211: Subscribe to mgmt frames with AP handle 0x1482ec0
+nl80211: Register frame type=0xb0 (WLAN_FC_STYPE_AUTH) nl_handle=0x1482ec0 match=
+nl80211: Register frame type=0x0 (WLAN_FC_STYPE_ASSOC_REQ) nl_handle=0x1482ec0 match=
+nl80211: Register frame type=0x20 (WLAN_FC_STYPE_REASSOC_REQ) nl_handle=0x1482ec0 match=
+nl80211: Register frame type=0xa0 (WLAN_FC_STYPE_DISASSOC) nl_handle=0x1482ec0 match=
+nl80211: Register frame type=0xc0 (WLAN_FC_STYPE_DEAUTH) nl_handle=0x1482ec0 match=
+nl80211: Register frame type=0xd0 (WLAN_FC_STYPE_ACTION) nl_handle=0x1482ec0 match=
+nl80211: Register frame type=0x40 (WLAN_FC_STYPE_PROBE_REQ) nl_handle=0x1482ec0 match=
+nl80211: Add own interface ifindex 3
+nl80211: if_indices[16]: 3
+phy: phy0
+BSS count 1, BSSID mask 00:00:00:00:00:00 (0 bits)
+wlp2s0: interface state UNINITIALIZED->COUNTRY_UPDATE
+Previous country code US, new country code US 
+nl80211: Regulatory information - country=US (DFS-FCC)
+nl80211: 2402-2472 @ 40 MHz 30 mBm
+nl80211: 5170-5250 @ 80 MHz 17 mBm
+nl80211: 5250-5330 @ 80 MHz 23 mBm (DFS)
+nl80211: 5490-5730 @ 160 MHz 23 mBm (DFS)
+nl80211: 5735-5835 @ 80 MHz 30 mBm
+nl80211: 57240-63720 @ 2160 MHz 40 mBm
+nl80211: Added 802.11b mode based on 802.11g information
+Completing interface initialization
+Mode: IEEE 802.11a  Channel: 40  Frequency: 5200 MHz
+DFS 0 channels required radar detection
+nl80211: Set freq 5200 (ht_enabled=1, vht_enabled=0, bandwidth=20 MHz, cf1=5200 MHz, cf2=0 MHz)
+  * freq=5200
+  * vht_enabled=0
+  * ht_enabled=1
+  * sec_channel_offset=0
+  * channel_type=1
+RATE[0] rate=60 flags=0x1
+RATE[1] rate=90 flags=0x0
+RATE[2] rate=120 flags=0x1
+RATE[3] rate=180 flags=0x0
+RATE[4] rate=240 flags=0x1
+RATE[5] rate=360 flags=0x0
+RATE[6] rate=480 flags=0x0
+RATE[7] rate=540 flags=0x0
+hostapd_setup_bss(hapd=0x1483780 (wlp2s0), first=1)
+wlp2s0: Flushing old station entries
+nl80211: flush -> DEL_STATION wlp2s0 (all)
+wlp2s0: Deauthenticate all stations
+nl80211: send_mlme - da= ff:ff:ff:ff:ff:ff noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0xc0 (WLAN_FC_STYPE_DEAUTH) nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=5200
+nl80211: send_frame -> send_frame_cmd
+nl80211: Frame command failed: ret=-16 (Device or resource busy) (freq=5200 wait=0)
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=0 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=1 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=2 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=3 (wlp2s0) alg=0 addr=(nil) key_idx=3 set_tx=0 seq_len=0 key_len=0
+Using interface wlp2s0 with hwaddr 74:de:2b:95:a0:1a and ssid "test_jychoi"
+jychoi_update_init || update_period: 20 timeout: 2000 sec: 2 usec: 0
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=0)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 00 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: Set wlp2s0 operstate 0->1 (UP)
+netlink: Operstate: ifindex=3 linkmode=-1 (no change), operstate=6 (IF_OPER_UP)
+wlp2s0: interface state COUNTRY_UPDATE->ENABLED
+wlp2s0: AP-ENABLED 
+wlp2s0: Setup of interface done.
+ctrl_iface not configured!
+random: Got 20/20 bytes from /dev/random
+RTM_NEWLINK: ifi_index=3 ifname=wlp2s0 operstate=6 linkmode=0 ifi_family=0 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=822060 busy_time=29608 tx_time=248 rx_time=28881 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=822060 channel_time_busy=29608)
+jychoi || Channel Utilization: 9
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 09 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=824058 busy_time=29720 tx_time=252 rx_time=28989 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=824058 channel_time_busy=29720)
+jychoi || Channel Utilization: 14
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 0e 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=826057 busy_time=29839 tx_time=256 rx_time=29104 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=826057 channel_time_busy=29839)
+jychoi || Channel Utilization: 15
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 0f 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=828055 busy_time=29961 tx_time=260 rx_time=29222 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=828055 channel_time_busy=29961)
+jychoi || Channel Utilization: 15
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 0f 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=830054 busy_time=30030 tx_time=264 rx_time=29286 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=830054 channel_time_busy=30030)
+jychoi || Channel Utilization: 8
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 08 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=832052 busy_time=30094 tx_time=268 rx_time=29346 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=832052 channel_time_busy=30094)
+jychoi || Channel Utilization: 8
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 08 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=834051 busy_time=30144 tx_time=272 rx_time=29392 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=834051 channel_time_busy=30144)
+jychoi || Channel Utilization: 6
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 06 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=836050 busy_time=30213 tx_time=276 rx_time=29456 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=836050 channel_time_busy=30213)
+jychoi || Channel Utilization: 8
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 08 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=838049 busy_time=30262 tx_time=280 rx_time=29501 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=838049 channel_time_busy=30262)
+jychoi || Channel Utilization: 6
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 06 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=840048 busy_time=30327 tx_time=284 rx_time=29562 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=840048 channel_time_busy=30327)
+jychoi || Channel Utilization: 8
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 08 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=842047 busy_time=30398 tx_time=288 rx_time=29630 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=842047 channel_time_busy=30398)
+jychoi || Channel Utilization: 9
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 09 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=844045 busy_time=30438 tx_time=292 rx_time=29666 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=844045 channel_time_busy=30438)
+jychoi || Channel Utilization: 5
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 05 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=846044 busy_time=30496 tx_time=296 rx_time=29720 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=846044 channel_time_busy=30496)
+jychoi || Channel Utilization: 7
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 07 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=848043 busy_time=30551 tx_time=300 rx_time=29770 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=848043 channel_time_busy=30551)
+jychoi || Channel Utilization: 7
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 07 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlp2s0
+nl80211: RX frame sa=80:5a:04:ce:95:1b freq=5200 ssi_signal=-85 fc=0x40 seq_ctrl=0x4e40 stype=4 (WLAN_FC_STYPE_PROBE_REQ) len=158
+jychoi wpa_supplicant_event
+nl80211: send_mlme - da= 80:5a:04:ce:95:1b noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 (WLAN_FC_STYPE_PROBE_RESP) nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=5200
+nl80211: send_frame -> send_frame_cmd
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlp2s0
+nl80211: RX frame sa=80:5a:04:ce:95:1b freq=5200 ssi_signal=-88 fc=0x40 seq_ctrl=0x4e50 stype=4 (WLAN_FC_STYPE_PROBE_REQ) len=158
+jychoi wpa_supplicant_event
+nl80211: send_mlme - da= 80:5a:04:ce:95:1b noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 (WLAN_FC_STYPE_PROBE_RESP) nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=5200
+nl80211: send_frame -> send_frame_cmd
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=850041 busy_time=30656 tx_time=304 rx_time=29871 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=850041 channel_time_busy=30656)
+jychoi || Channel Utilization: 13
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 0d 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=852040 busy_time=30723 tx_time=308 rx_time=29934 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=852040 channel_time_busy=30723)
+jychoi || Channel Utilization: 8
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 08 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+ jychoi wpa_driver_nl80211_get_survey ||nl80211: Fetch survey data
+ jychoi add_survey || nl80211: Freq survey dump event (freq=5200 MHz noise=-95 channel_time=854039 busy_time=30796 tx_time=312 rx_time=30002 filled=001f)
+wlp2s0: Event SURVEY (46) received
+jychoi wpa_supplicant_event
+jychoi hostapd_event_get_survey
+jychoi || Single Channel Survey: (freq=5200 channel_time=854039 channel_time_busy=30796)
+jychoi || Channel Utilization: 9
+jychoi_ieee802_11_set_beacon
+nl80211: Set beacon (beacon_set=1)
+nl80211: Beacon head - hexdump(len=62): 80 00 00 00 ff ff ff ff ff ff 74 de 2b 95 a0 1a 74 de 2b 95 a0 1a 00 00 00 00 00 00 00 00 00 00 64 00 01 00 00 0b 74 65 73 74 5f 6a 79 63 68 6f 69 01 08 8c 12 98 24 b0 48 60 6c 03 01 28
+nl80211: Beacon tail - hexdump(len=98): 32 01 ff 0b 05 00 00 09 00 00 2d 1a 0c 00 1b ff ff ff 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 3d 16 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 7f 08 00 00 00 00 00 00 00 40 dd 18 00 50 f2 02 01 01 00 00 03 a4 00 00 27 a4 00 00 42 43 5e 00 62 32 2f 00
+nl80211: ifindex=3
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=11):
+     74 65 73 74 5f 6a 79 63 68 6f 69                  test_jychoi     
+  * beacon_int=100
+nl80211: hidden SSID not in use
+nl80211: privacy=0
+nl80211: auth_algs=0x3
+nl80211: wpa_version=0x0
+nl80211: key_mgmt_suites=0x4
+nl80211: pairwise_ciphers=0x0
+nl80211: group_cipher=0x1
+nl80211: SMPS mode - off
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+jychoi_update_channel_utilization || sec: 2 usec: 0
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+jychoi wpa_supplicant_event
+Signal 2 received - terminating
+hostapd_interface_deinit_free(0x1482550)
+hostapd_interface_deinit_free: num_bss=1 conf->num_bss=1
+hostapd_interface_deinit(0x1482550)
+wlp2s0: interface state ENABLED->DISABLED
+hostapd_bss_deinit: deinit bss wlp2s0
+wlp2s0: Deauthenticate all stations
+nl80211: send_mlme - da= ff:ff:ff:ff:ff:ff noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0xc0 (WLAN_FC_STYPE_DEAUTH) nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=5200
+nl80211: send_frame -> send_frame_cmd
+wlp2s0: AP-DISABLED 
+hostapd_cleanup(hapd=0x1483780 (wlp2s0))
+hostapd_free_hapd_data(wlp2s0)
+hostapd_interface_deinit_free: driver=0x48ad60 drv_priv=0x14845e0 -> hapd_deinit
+nl80211: deinit ifname=wlp2s0 disabled_11b_rates=0
+nl80211: Remove monitor interface: refcount=0
+nl80211: Remove beacon (ifindex=3)
+netlink: Operstate: ifindex=3 linkmode=0 (kernel-control), operstate=6 (IF_OPER_UP)
+nl80211: Set mode ifindex 3 iftype 2 (STATION)
+nl80211: Teardown AP(wlp2s0) - device_ap_sme=0 use_monitor=0
+nl80211: Unsubscribe mgmt frames handle 0x8888888889c0a649 (AP teardown)
+hostapd_interface_free(0x1482550)
+hostapd_interface_free: free hapd 0x1483780
+hostapd_cleanup_iface(0x1482550)
+hostapd_cleanup_iface_partial(0x1482550)
+hostapd_cleanup_iface: free iface=0x1482550
